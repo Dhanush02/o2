@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+a:focus,
+.button:focus,
+button:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+li {
+  list-style-type: none;
+}
+.nav-link:hover {
+  color: orange;
+}
+.nav-fix {
+  top: 0;
+  width: 100%;
+  z-index: 999 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  cursor: pointer;
+  background: linear-gradient(to right, #ffe259, #ffa751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.style {
+  opacity: 1;
+  display: inline-block;
+  margin: 10px !important;
+  padding: 10px 30px !important;
+  font-weight: bolder;
+  color: #000;
+  font-size: 1em !important;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: orange;
+  background: none;
+}
+.fas {
+  visibility: hidden;
+}
+@media (max-width: 990px) {
+  .fa-bars {
+    visibility: visible;
+  }
+  .fa-times-circle {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    visibility: visible;
+    color: black;
+  }
+  .nav {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    overflow: hidden;
+  }
+  .nav.show {
+    display: flex;
+    background-color: white;
+  }
+}
+.home_banner_area .banner_inner .home_right_img {
+  padding-top: 120px;
+}
+
+.home_banner_area .banner_inner .col-lg-7 {
+  vertical-align: middle;
+  align-self: center;
+}
+
+.banner-div {
+  position: relative;
+  top: 120px;
+  margin-bottom: 130px !important;
+  padding: 20px;
+}
+.banner-head {
+  text-transform: uppercase;
+  background: url("https://i.pinimg.com/originals/be/01/b4/be01b4286a1e3c1c6d7fbc62de91fe8c.jpg")
+    no-repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  font-weight: bolder !important;
+  background-position: 68px -283px;
+}
+@media (max-width: 1024px) {
+  .banner-head {
+    font-size: 2em;
+    background-position: -22px -163px;
+  }
+}
+@media (max-width: 425px) {
+  .banner-head {
+    font-size: 1.8em;
+    background-position: 6px -137px;
+  }
+}
+.btn {
+  border: none !important;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  height: 50px;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  color: #000;
+  font-weight: bolder !important;
+  font-size: 16px !important;
+  background-color: #fff;
+  margin: 8px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+.btn:active {
+  outline: none !important;
+  border: 0;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: orange;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+.btn:hover {
+  color: white !important;
+}
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
