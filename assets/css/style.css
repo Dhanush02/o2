@@ -40,7 +40,7 @@ li {
   flex-direction: column !important;
 }
 .navbar-brand {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: bolder;
   cursor: pointer;
   background: linear-gradient(to right, #ffe259, #ffa751);
@@ -51,7 +51,7 @@ li {
   opacity: 1;
   display: inline-block;
   margin: 10px !important;
-  padding: 10px 30px !important;
+  padding: 10px 20px !important;
   font-weight: bolder;
   color: #000;
   font-size: 1em !important;
@@ -67,6 +67,19 @@ li {
 .fas {
   visibility: hidden;
 }
+.home-image{
+  background: url('../images/—Pngtree—geometric\ abstract_2327967.png') no-repeat;
+  background-size: 50% 110%;
+  /* opacity: 0.5; */
+  /* -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50;  */
+
+}
+
 @media (max-width: 990px) {
   .fa-bars {
     visibility: visible;
@@ -112,6 +125,7 @@ li {
   top: 120px;
   margin-bottom: 130px !important;
   padding: 20px;
+  z-index:997;
 }
 .banner-head {
   text-transform: uppercase;
@@ -123,6 +137,7 @@ li {
   font-weight: bolder !important;
   background-position: 68px -283px;
 }
+
 @media (max-width: 1024px) {
   .banner-head {
     font-size: 2em;
@@ -133,6 +148,20 @@ li {
   .banner-head {
     font-size: 1.8em;
     background-position: 6px -137px;
+  }
+}
+
+@media(max-width:769px){
+  .content-div{
+    position: relative;
+    top:170px;
+  }
+  .home_right_img{
+    position: relative;
+    top:-65px;
+  }
+  .home-image{
+    background:none;
   }
 }
 .btn {
@@ -181,4 +210,39 @@ li {
 .btn:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.section-title h1 {
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+  color: orange;
+}
+
+.section-title h1::before {
+  background: linear-gradient(to right, #ffe259, #ffa751);
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  margin-left: -35px;
+  position: absolute;
+  width: 75px;
+}
+
+.about-div h5 {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 26px;
+  background: #fff;
+  font-weight: lighter;
+}
+.about-div {
+  text-justify: inter-word;
+  text-align: justify !important;
+  padding: 12px;
+}
+.about-sub {
+  font-size: 18px;
+  color: black;
 }

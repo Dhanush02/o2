@@ -25,61 +25,63 @@
   </head>
   <body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
     <div class="position-fixed nav-fix">
-        <nav id="navbar-example2" class="navbar">
-          <a class="navbar-brand" href="#">Orange Designer</a>
+      <nav id="navbar-example2" class="navbar">
+        <a class="navbar-brand" href="#">Orange Designer</a>
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-list fas fa-bars"
+          onclick="menu()"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#home" class="nav-link style">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link style" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link style">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link style" href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link style" href="#contact">Contact</a>
+          </li>
           <svg
             width="1em"
             height="1em"
             viewBox="0 0 16 16"
-            class="bi bi-list fas fa-bars"
+            class="bi bi-x fas fa-times-circle"
             onclick="menu()"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               fill-rule="evenodd"
-              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
             />
           </svg>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="#home" class="nav-link style">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link style" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link style">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link style" href="#works">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link style" href="#contact">Contact</a>
-            </li>
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 16 16"
-              class="bi bi-x fas fa-times-circle"
-              onclick="menu()"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </ul>
-        </nav>
-      </div>
-    <section class="home_banner_area" id="home" >
+        </ul>
+      </nav>
+    </div>
+    <section class="home_banner_area" id="home">
       <div class="banner_inner">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 ">
-              <div class=" text-center" style="margin-top:280px;">
+          <div
+            class="row align-items-center justify-content-center content-div"
+          >
+            <div class="col-lg-6">
+              <div class="text-center">
                 <h1 class="banner-head">Build your Cards with Us</h1>
                 <h3 class="p-3">Join with Us.. Grow With Us..</h3>
                 <a href="#about"
@@ -102,14 +104,42 @@
         </div>
       </div>
     </section>
-    
-    <div class="about" id="about" style="height:100vh;"></div>
-    <div class="services" style="height:100vh;"></div>
-    <div class="works" style="height:100vh;"></div>
-    <div class="contact" style="height:100vh;"></div>
 
-</body>
-<script
+    <div class="about" id="about" style="height: 100vh">
+      <div class="container-fluid">
+        <div
+          class="section-title text-center"
+          style="padding-top: 120px !important"
+        >
+          <h1>
+            ABOUT US<br /><span class="about-sub"
+              >We create what you Desire</span
+            >
+          </h1>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 text-center">
+            <img
+              src="assets/images/undraw_Image__folder_re_hgp7.svg"
+              class="img-fluid w-75 p-3"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1>Life is for service</h1>
+            <p style="padding: 20px;">We are passionate about the finest, most cost-effective and timely
+            printing services and promotional items available anywhere in the
+            country. Up-to-date on technology, we create beautiful printed
+            projects, with an easy and pain-free workflow system. We pride
+            ourselves on our commitment to great customer service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services" style="height: 100vh"></div>
+    <div class="works" style="height: 100vh"></div>
+    <div class="contact" style="height: 100vh"></div>
+  </body>
+  <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
