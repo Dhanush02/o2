@@ -264,6 +264,7 @@ li {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  height:350px;
 }
 .feature_item img {
   margin-bottom: 35px;
