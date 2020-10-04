@@ -9,7 +9,7 @@
     visibility: visible;
     color: black;
   }
-  .nav {
+  .top-nav {
     margin: 0;
     padding: 0;
     position: fixed;
@@ -53,5 +53,9 @@
     .banner-text{
         font-size: 16px;
         display: block;
+    }
+    .cartBox .cart {
+      height: 70%;
+      width: 100%;
     }
 }

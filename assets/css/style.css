@@ -72,24 +72,141 @@ body::-webkit-scrollbar-thumb {
   height: 4px;
   content: "";
 }
-.address{
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 28px;
+.address {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 28px;
 }
-.footer-head{
-    color:orange
+.footer-head {
+  color: orange;
 }
-.footer-links:hover{
-    color:orange;
-    transition: all 0.3s ease-in;
+.footer-links:hover {
+  color: orange;
+  transition: all 0.3s ease-in;
 }
-.orange{
+.orange {
   font-size: 24px;
   color: orange;
   letter-spacing: 1px;
 }
-.about-div{
+.about-div {
   line-height: 28px;
+}
+.work-pill {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.work-pill li a {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000 !important;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.work-pill li a:hover,
+.work-pill li a.active {
+  background: orange !important;
+}
+
+.cartBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  transition: 0.3s linear;
+  transform: scale(0);
+}
+.cartBox.active {
+  transform: scale(1);
+}
+.cartBox .cart {
+  position: relative;
+  height: 70%;
+  width: 80%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartBox .cart i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #f00;
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.cartBox .cart i:hover {
+  background: #ff0000a5;
+}
+.cartBox .cart h1 {
+  position: relative;
+  margin-top: 2%;
+  font-size: 2.8rem;
+  color: orange;
+}
+
+.icons-btn {
+  display: inline-block;
+  text-align: center;
+}
+.icons-btn i {
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: rgb(14, 13, 13);
+  cursor: pointer;
+}
+
+.bag .number {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  color: #fff;
+  font-size: 12px;
+  background: #ff781f;
+  right: 25px;
+}
+.content-work p,
+.content-work h3,
+.content-work a,
+.content-work p span,
+.works li a {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.class-butt {
+  background-color: #ff781f;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5em;
+  text-decoration: none;
+}
+.class-butt:focus,
+.class-butt:hover {
+  color: White;
+}
+.content-work a {
+  position: relative;
+  left: 25%;
 }
