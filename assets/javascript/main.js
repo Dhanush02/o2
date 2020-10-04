@@ -44,6 +44,7 @@ window.onload = function () {
   const attToCartBtn = document.getElementsByClassName("attToCart");
 
   let items = [];
+  
   for (let i = 0; i < attToCartBtn.length; i++) {
     attToCartBtn[i].addEventListener("click", function (e) {
       localStorage.setItem("activeTab", "#pills-works");
@@ -55,7 +56,9 @@ window.onload = function () {
             e.target.parentElement.children[1].children[0].textContent
           ),
           no: 1,
+          size:parseInt(document.getElementById('inp').value)
         };
+        
         if (JSON.parse(localStorage.getItem("items")) === null) {
           items.push(item);
           localStorage.setItem("items", JSON.stringify(items));
@@ -103,7 +106,7 @@ window.onload = function () {
         "</th><th>" +
         data.no +
         "</th><th>" +
-        data.price +
+        data.price*data.no*data.size +
         '</th><th><a href="#" onclick=Delete(this); style="color:white;background:#E74040;padding:5px;border-radius:5px;">Delete</a></th></tr>';
     });
   }
