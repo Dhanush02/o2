@@ -1,4 +1,6 @@
- menu = () => {
+NProgress.start();
+NProgress.done();
+menu = () => {
   var showNav = document.querySelector(".nav");
   showNav.classList.toggle("show");
   var a = Array.from(document.querySelectorAll(".show a"));
@@ -7,35 +9,29 @@
       showNav.classList.remove("show");
     });
   });
-}
+};
 window.addEventListener("scroll", () => {
   let navbar = document.getElementById("navbar-example2");
   if (window.pageYOffset > 30) {
     navbar.style.background = "white";
     navbar.style.boxShadow = "0 8px 25px 0 rgba(0,0,0,.1)";
-    navbar.style.height="80px";
+    navbar.style.height = "80px";
   } else {
     navbar.style.background = "none";
     navbar.style.boxShadow = "none";
-    
   }
 });
-
-
-function Delete(e){
+function Delete(e) {
   let items = [];
-  JSON.parse(localStorage.getItem('items')).map(data=>{
-    if(data.id != e.parentElement.parentElement.children[0].textContent){
-      
+  JSON.parse(localStorage.getItem("items")).map((data) => {
+    if (data.id != e.parentElement.parentElement.children[0].textContent) {
       items.push(data);
-
     }
   });
-  localStorage.setItem('items',JSON.stringify(items));
+  localStorage.setItem("items", JSON.stringify(items));
   window.location.reload();
-};
+}
 window.onload = function () {
-  //cart box
   const iconShopping = document.querySelector(".iconShopping");
   const cartCloseBtn = document.querySelector(".fa-times");
   const cartBox = document.querySelector(".cartBox");
@@ -45,19 +41,19 @@ window.onload = function () {
   cartCloseBtn.addEventListener("click", function () {
     cartBox.classList.remove("active");
   });
-
-  // adding data to localstorage
   const attToCartBtn = document.getElementsByClassName("attToCart");
-  
+
   let items = [];
   for (let i = 0; i < attToCartBtn.length; i++) {
     attToCartBtn[i].addEventListener("click", function (e) {
-      localStorage.setItem('activeTab','#pills-works')
+      localStorage.setItem("activeTab", "#pills-works");
       if (typeof Storage !== "undefined") {
         let item = {
           id: i + 1,
           name: e.target.parentElement.children[0].textContent,
-          price: parseInt(e.target.parentElement.children[1].children[0].textContent),
+          price: parseInt(
+            e.target.parentElement.children[1].children[0].textContent
+          ),
           no: 1,
         };
         if (JSON.parse(localStorage.getItem("items")) === null) {
@@ -82,7 +78,6 @@ window.onload = function () {
       }
     });
   }
-  // adding data to shopping cart
   const iconShoppingP = document.querySelector(".iconShopping p");
   let no = 0;
   if (localStorage.getItem("items")) {
@@ -92,8 +87,6 @@ window.onload = function () {
   }
 
   iconShoppingP.innerHTML = no;
-
-  //adding cartbox data in table
   const cardBoxTable = cartBox.querySelector("table");
   let tableData = "";
   tableData +=
@@ -116,19 +109,19 @@ window.onload = function () {
   }
   cardBoxTable.innerHTML = tableData;
 };
-// totalCost = () => {
-//   let cartCost = localStorage.getItem("items");
-//   cartCost = JSON.parse(cartCost);
+totalCost = () => {
+  let cartCost = localStorage.getItem("items");
+  cartCost = JSON.parse(cartCost);
 
-//   let total = 0;
-//   if (cartCost != null) {
-//     cartCost.map((data) => {
-//       let sum = parseInt(data.price);
-//       total = total + sum;
-//       console.log(total);
-//     });
-//   }
-// };
-let obj = localStorage.getItem('items');
+  let total = 0;
+  if (cartCost != null) {
+    cartCost.map((data) => {
+      let sum = parseInt(data.price);
+      total = total + sum*data.no;
+      console.log(total);
+    });
+  }
+};
+let obj = localStorage.getItem("items");
 console.log(JSON.parse(obj));
-// this.totalCost();
+this.totalCost();

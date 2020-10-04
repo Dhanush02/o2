@@ -29,33 +29,33 @@
     background-color: white;
   }
 }
-@media(min-width:990px){
-    .nav-image{
-        position: absolute;
-    }
+@media (min-width: 990px) {
+  .nav-image {
+    position: absolute;
+  }
 }
-@media(max-width:1000px){
-    .nav-image{
-        height: 150px;
-        position: relative;
-        top:-40px;
-        width:150px;
-    }
-    .fa-bars{
-        position: relative;
-        top:-40px;
-    }
-    .title-section span{
-        font-size:16px;
-    }
+@media (max-width: 1000px) {
+  .nav-image {
+    height: 150px;
+    position: relative;
+    top: -40px;
+    width: 150px;
+  }
+  .fa-bars {
+    position: relative;
+    top: -40px;
+  }
+  .title-section span {
+    font-size: 16px;
+  }
 }
-@media(max-width:426px){
-    .banner-text{
-        font-size: 16px;
-        display: block;
-    }
-    .cartBox .cart {
-      height: 70%;
-      width: 100%;
-    }
+@media (max-width: 426px) {
+  .banner-text {
+    font-size: 16px;
+    display: block;
+  }
+  .cartBox .cart {
+    height: 70%;
+    width: 100%;
+  }
 }
