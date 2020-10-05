@@ -36,17 +36,21 @@
 }
 @media (max-width: 1000px) {
   .nav-image {
-    height: 150px;
+    height: 80px;
     position: relative;
-    top: -40px;
-    width: 150px;
+    top: -5px;
+    width: 130px;
   }
   .fa-bars {
     position: relative;
-    top: -40px;
+    top: -5px;
   }
   .title-section span {
     font-size: 16px;
+  }
+  .bag .number{
+    top:460px;
+    right:140px;
   }
 }
 @media (max-width: 426px) {
