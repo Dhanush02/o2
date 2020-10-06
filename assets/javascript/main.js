@@ -160,7 +160,7 @@ attToCartBtn.forEach(attBtn => {
       price: parseInt(
         e.target.parentElement.children[1].children[0].textContent
       ),
-      quantity: parseInt(e.target.parentElement.children[2].value)
+      quantity: parseInt(e.target.parentElement.children[3].value)
     }
     items.forEach((obj, i) => {
       if(obj.name == item.name) {
@@ -191,7 +191,9 @@ let addRows = () => {
                    "</th><th>" + data.price +
                    "</th><th>" + data.quantity +
                    "</th><th>" + (data.price * data.quantity)+
-      '</th><th><a href="#" onclick=deleteRow(this); style="color:white;background:#E74040;padding:5px;border-radius:5px;">Delete</a></th></tr>';
+                   '</th><th><a href="#" onclick=deleteRow(this); style="color:white;background:#E74040;padding:5px;border-radius:5px;">Delete</a>'+
+                   '</th><th><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhanukarthick15@gmail.com" target="_blank" style="color:white;background:blue;padding:5px;border-radius:5px;">Upload</a></th></tr>';
+                   
     })
   }
   cardBoxTable.innerHTML = tableData

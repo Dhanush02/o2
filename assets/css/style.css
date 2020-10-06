@@ -21,7 +21,8 @@ li {
 }
 body::-webkit-scrollbar-track,
 body::-webkit-scrollbar,
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.cartBox .cart::-webkit-scrollbar {
   display: none;
 }
 .nav-link:hover {
@@ -38,7 +39,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
   display: inline-block;
   margin: 10px !important;
-  padding: 10px 20px !important;
+  padding: 10px 15px !important;
   font-weight: bolder;
   color: #000;
   font-size: 1em !important;
@@ -194,8 +195,7 @@ body::-webkit-scrollbar-thumb {
 .content-work p,
 .content-work h3,
 .content-work a,
-.content-work p span,
-.works li a {
+.content-work p span {
   font-family: "Noto Sans JP", sans-serif;
 }
 .class-butt {
@@ -213,5 +213,13 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   left: 25%;
 }
+.nav-color{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-
+.nav-item .nav-color.active {
+  color: white;
+  background: #ff781f;
+}
