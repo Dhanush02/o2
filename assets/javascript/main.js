@@ -12,10 +12,10 @@ menu = () => {
 };
 window.addEventListener("scroll", () => {
   let navbar = document.getElementById("navbar-example2");
-  if (window.pageYOffset > 30) {
+  if (window.pageYOffset > 10) {
     navbar.style.background = "white";
     navbar.style.boxShadow = "0 8px 25px 0 rgba(0,0,0,.1)";
-    navbar.style.height = "80px";
+    
   } else {
     navbar.style.background = "none";
     navbar.style.boxShadow = "none";
@@ -178,7 +178,7 @@ attToCartBtn.forEach(attBtn => {
   
 })
 let addRows = () => {
-  let tableData = "<tr><th>S no.</th><th>Item Name</th><th>Item Price</th><th>Quantity</th><th>Amount</th><th></th></tr>"
+  let tableData = "<tr><th>S NO.</th><th>PRODUCT NAME</th><th>PRICE</th><th>QUANTITY</th><th>AMOUNT</th><th></th></tr>"
 
   if(items === null) {
 
@@ -191,8 +191,7 @@ let addRows = () => {
                    "</th><th>" + data.price +
                    "</th><th>" + data.quantity +
                    "</th><th>" + (data.price * data.quantity)+
-                   '</th><th><a href="#" onclick=deleteRow(this); style="color:white;background:#E74040;padding:5px;border-radius:5px;">Delete</a>'+
-                   '</th><th><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhanukarthick15@gmail.com" target="_blank" style="color:white;background:blue;padding:5px;border-radius:5px;">Upload</a></th></tr>';
+                   '</th><th><a href="#" onclick=deleteRow(this); style="color:white;background:#E74040;padding:5px;border-radius:5px;">DELETE</a>&nbsp;<a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhanukarthick15@gmail.com" target="_blank" style="color:white;background:grey;padding:5px;border-radius:5px;padding-right:5px;">UPLOAD</a></th></tr>';
                    
     })
   }
@@ -211,3 +210,5 @@ let totalAmount = () => {
   })
   total.textContent = sum
 }
+
+

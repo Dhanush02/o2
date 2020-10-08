@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -10,6 +9,7 @@ html {
 body {
   height: auto;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 a,
 a:hover {
@@ -25,8 +25,12 @@ body::-webkit-scrollbar-thumb,
 .cartBox .cart::-webkit-scrollbar {
   display: none;
 }
-.nav-link:hover {
+.orange {
   color: orange;
+  font-size: 28px;
+}
+#navbar-example2{
+  height:80px;
 }
 .nav-fix {
   top: 0;
@@ -34,6 +38,7 @@ body::-webkit-scrollbar-thumb,
   z-index: 999 !important;
   display: flex !important;
   flex-direction: column !important;
+  box-shadow: 0 8px 25px 0 rgba(0,0,0,.1);
 }
 .style {
   opacity: 1;
@@ -49,8 +54,43 @@ body::-webkit-scrollbar-thumb,
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: orange;
+  color:rgb(100, 209, 36) ;
   background: none;
+}
+.nav-pills .red-tab.active,
+.nav-pills .show > .red-tab,
+.nav-pills .red-tab:hover {
+  color: rgb(253, 66, 66);
+  background: none;
+  border-bottom: 2px solid rgb(253, 66, 66);
+}
+.nav-pills .blue-tab.active,
+.nav-pills .show > .blue-tab,
+.nav-pills .blue-tab:hover {
+  color: rgb(66, 138, 253);
+  background: none;
+  border-bottom: 2px solid rgb(66, 138, 253);
+}
+.nav-pills .green-tab.active,
+.nav-pills .show > .green-tab,
+.nav-pills .green-tab:hover {
+  color: rgb(100, 209, 36);
+  background: none;
+  border-bottom: 2px solid rgb(100, 209, 36);
+}
+.nav-pills .orange-tab.active,
+.nav-pills .show > .orange-tab,
+.nav-pills .orange-tab:hover {
+  color: rgb(253, 150, 66);
+  background: none;
+  border-bottom: 2px solid rgb(253, 150, 66);
+}
+.nav-pills .violet-tab.active,
+.nav-pills .show > .violet-tab,
+.nav-pills .violet-tab:hover {
+  color: rgb(209, 66, 253);
+  background: none;
+  border-bottom: 2px solid rgb(209, 66, 253);
 }
 .fas {
   visibility: hidden;
@@ -61,7 +101,9 @@ body::-webkit-scrollbar-thumb,
   display: inline-block;
   color: #000;
 }
-
+img {
+  pointer-events: none;
+}
 .title-section.text-center h2:after {
   position: absolute;
   bottom: 0;
@@ -79,20 +121,10 @@ body::-webkit-scrollbar-thumb,
   font-style: italic;
   line-height: 28px;
 }
-.footer-head {
-  color: orange;
-}
-.footer-links:hover {
-  color: orange;
-  transition: all 0.3s ease-in;
-}
-.orange {
-  font-size: 24px;
-  color: orange;
-  letter-spacing: 1px;
-}
 .about-div {
   line-height: 28px;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
 }
 .work-pill {
   display: flex;
@@ -131,7 +163,6 @@ body::-webkit-scrollbar-thumb,
   z-index: 99999;
   transition: 0.3s linear;
   transform: scale(0);
-  
 }
 .cartBox.active {
   transform: scale(1);
@@ -141,9 +172,9 @@ body::-webkit-scrollbar-thumb,
   height: 70%;
   width: 80%;
   background: #fff;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   overflow: scroll;
 }
 
@@ -159,10 +190,7 @@ body::-webkit-scrollbar-thumb,
 .cartBox .cart i:hover {
   background: #ff0000a5;
 }
-.cartBox .cart h1 {
-  position: relative;
-  margin-top: 2%;
-  font-size: 2.8rem;
+.cart-heading {
   color: orange;
 }
 
@@ -181,7 +209,7 @@ body::-webkit-scrollbar-thumb,
 
 .bag .number {
   position: absolute;
-  top: 5px;
+  top:-12px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -189,8 +217,7 @@ body::-webkit-scrollbar-thumb,
   color: #fff;
   font-size: 12px;
   background: #ff781f;
-  right: 45px;
-
+  right: -8px;
 }
 .content-work p,
 .content-work h3,
@@ -213,13 +240,44 @@ body::-webkit-scrollbar-thumb,
   position: relative;
   left: 25%;
 }
-.nav-color{
+.nav-color {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
 }
-
-.nav-item .nav-color.active {
-  color: white;
-  background: #ff781f;
+table tr th {
+  text-align: center;
+}
+.grand-total {
+  position: absolute;
+  right: 100px;
+}
+/* footer */
+.footer {
+  background: #ffe252;
+  font-family: "Roboto", sans-serif !important;
+}
+.underline-small {
+  color: black;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+.underline-small::after {
+  content: "";
+  height: 1px;
+  width: 20px;
+  background: #0e0d0d;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+hr{
+  width: 50%;
+  margin: -10px auto;
+}
+.nav-image{
+  position: relative;
+  top:-13px;
+  left:20px;
 }

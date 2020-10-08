@@ -29,16 +29,17 @@
     background-color: white;
   }
 }
-@media (min-width: 990px) {
-  .nav-image {
-    position: absolute;
+@media (max-width: 990px) {
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 1000px) {
   .nav-image {
     height: 80px;
     position: relative;
-    top: -5px;
+    /* top: -5px; */
     width: 130px;
   }
   .fa-bars {
@@ -62,4 +63,7 @@
     height: 70%;
     width: 100%;
   }
+}
+@media(max-width:769px){
+  
 }
