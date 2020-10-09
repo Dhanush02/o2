@@ -60,9 +60,9 @@
           id="pills-tab myTab"
           role="tablist"
         >
-          <li class="nav-item" role="presentation">
+          <li class="nav-item" role="presentation" id="nav-li-id">
             <a
-              class="nav-link active style red-tab"
+              class="nav-link show active style red-tab"
               id="pills-home-tab"
               data-toggle="pill"
               href="#pills-home"
@@ -72,7 +72,7 @@
               >Home</a
             >
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item" role="presentation" id="nav-li-id2">
             <a
               class="nav-link style blue-tab"
               id="pills-profile-tab"
@@ -84,7 +84,7 @@
               >About</a
             >
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item" role="presentation" id="nav-li-id3">
             <a
               class="nav-link style green-tab"
               id="pills-works-tab"
@@ -96,8 +96,8 @@
               >PRODUCTS</a
             >
           </li>
-
-          <li class="nav-item" role="presentation">
+          
+          <li class="nav-item" role="presentation" id="nav-li-id4">
             <a
               class="nav-link style orange-tab"
               id="pills-service-tab"
@@ -109,8 +109,19 @@
               >GUIDELINES</a
             >
           </li>
-
-          <li class="nav-item" role="presentation">
+          <li class="nav-item" role="presentation" id="nav-li-id4">
+            <a
+              class="nav-link style orange2-tab"
+              id="pills-think-tab"
+              data-toggle="pill"
+              href="#pills-think"
+              role="tab"
+              aria-controls="pills-think"
+              aria-selected="false"
+              >THINK ROOM</a
+            >
+          </li>
+          <li class="nav-item" role="presentation" id="nav-li-id5">
             <a
               class="nav-link style violet-tab"
               id="pills-contact-tab"
@@ -124,7 +135,10 @@
           </li>
           <li>
             <div class="">
-              <div class="iconShopping float-right mr-3 mt-2" style="position: relative;top:3px">
+              <div
+                class="iconShopping float-right mr-3 mt-2"
+                style="position: relative; top: 3px"
+              >
                 <a class="icons-btn d-inline-block bag">
                   <i
                     class="fa fa-shopping-cart"
@@ -142,7 +156,7 @@
                   <div class="row">
                     <img
                       class="ml-4"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAClElEQVRoge2Yz0tUURTHP/c5TsQwbhKCNGrTxkBaBv0BLWqrEGTuysoENzpt7FERiRRhhCWukjYatayVi7DaFQlZq8BKsx+LGJsanzqnRTx0ptF377wfvsX7LB6ce8+Z+X7fu/eeeQMJCQkJ24kqi86ePAbcI1XfRPMeyGYB1oAPCGN8L97Etle3QeemWGWRcBdoYnUF5hfc0TrgAIpBdu+8H7E+TyzvlA2InGDk+tGQtNREuQElpxE+U18PzU3VK4RTEejSRnlmjFw7gljTEWjRw+IQXbk366EXXRdfgPoUqih9nmwUDzoGlBKk9Dg0SSaU1I3KIb1NrOoeBi7GGJnhfN9U5aiegW+/nwMLnnmhooZQSipH9QzYdgmRR4Fr0meexuJEtQn9PiBqMjA5pgi3aLedalP6Bn4Up4EvQWkyYAlnx9hmk/oGbLuEkuhPI1Gj9Pb+3Gza7KcERL2MVknJ8FYJZga+Lj/zJcecCc7kPm6VYGbAtku+5JhSsv5rXJWYLqEomaK775VXUnwNWCXPuw9xNSC8Z9F5qpMaTwOWDOnutzgaWGQl80A3OW4G5hHppKdnWbcg5fsrz+W83+pCJG5PwJhaDCyVRcODzcFIqY1aDMyWRSkZ5c7VvcHIMcd8/Y4MdiNyOwQt6xjsK/MnsOvPKPDauC4kzA202w5r6jgxMVHbKXShf4HG4mGgG1EvgV+BqjLA9xl+sK0tnc0vXxFUByAC44WG9MDbycmq77BB1br4bmSZvHNZUH1urKA/k3cAcmHWuvhuZIp/f/bub2llX0urO9YZdq1LEJ1Yyi+AsBZBLRCAAYFxgLnZGebezbifOh52rYvvPVBoSA9k8g4KOlxRhWz6Uti1CQkJCfHgL5gc0zcZwFXWAAAAAElFTkSuQmCC"
+                      src="./assets/images/icons8-shopping-cart-60.png"
                       height="48"
                       width="48"
                     />
@@ -179,10 +193,9 @@
         </ul>
       </nav>
     </div>
-
     <!-- CONTENT DIVISION-->
     <div
-      class="container-fluid tab-content p-0"
+      class="container-fluid tab-content p-0 position-relative"
       id="pills-tabContent"
       style="margin-top: 100px"
     >
@@ -250,16 +263,25 @@
           </a>
         </div>
         <!--IMAGE CONTENT-->
-        <div class="container-fluid mt-5 mb-5 pt-3 pb-3">
+        <div
+          class="container-fluid mt-5 mb-5"
+          style="padding-left: 60px; padding-right: 60px"
+        >
           <div class="row justify-content-between">
-            <div class="col-md-4">
-              <img src="./assets/images/Web Disign.jpg " class="img-fluid pb-2 effect5">
+            <div class="col-md-4 mt-5 mb-5">
+              <img
+                src="./assets/images/Graphic design-PNG.png"
+                class="img-fluid"
+              />
             </div>
-            <div class="col-md-4">
-              <img src="./assets/images/Graphic design.jpg" class="img-fluid pb-2">
+            <div class="col-md-4 mt-5 mb-5">
+              <img src="./assets/images/Web Design-PNG.png" class="img-fluid" />
             </div>
-            <div class="col-md-4">
-              <img src="./assets/images/Logo Design.jpg" class="img-fluid pb-2">
+            <div class="col-md-4 mt-5 mb-5">
+              <img
+                src="./assets/images/Logo Design-PNG.png"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -275,11 +297,12 @@
                 class="img-fluid mt-5"
                 height="100px"
                 width="100px"
-              
               />
             </div>
             <div class="col-md-4 mt-2">
-              <div class="d-flex align-items-center justify-content-center footer-flex">
+              <div
+                class="d-flex align-items-center justify-content-center footer-flex"
+              >
                 <div class="d-flex flex-column mr-4">
                   <h6 class="ml-3">DIRECT MAILING</h6>
                   <img
@@ -296,13 +319,13 @@
                     src="./assets/images/thumbs.svg"
                     height="50"
                     width="50"
-                    style="position: relative;right:10px;"
+                    style="position: relative; right: 10px"
                   />
                 </div>
                 <div class="d-flex flex-column mr-4">
                   <h6 class="ml-3">FAST DELIVERY</h6>
                   <img
-                    class="ml-5 mt-2 "
+                    class="ml-5 mt-2"
                     src="./assets/images/fast.png"
                     height="50"
                     width="50"
@@ -313,9 +336,9 @@
                 &#169; <strong>Orange Designer</strong>. All Rights Reserved
               </p>
             </div>
-            <div class="col-md-4 " style="position: relative; top: -8px;">
-              <h6 class="underline-small mb-2 " >CONNECT WITH US</h6>
-              <p style="font-size: 16px;">
+            <div class="col-md-4" style="position: relative; top: -8px">
+              <h6 class="underline-small mb-2">CONNECT WITH US</h6>
+              <p style="font-size: 16px">
                 <strong>ORANGE DESIGNER</strong><br />
                 8-A/16, First Floor, SS Complex, Sathya<br />
                 Narayana Street, Swarnapuri 1st Gate,<br />
@@ -325,10 +348,15 @@
           </div>
           <hr />
           <p class="text-center mt-4" style="font-size: 14px">
-            HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABOUT
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRODUCTS
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GUIDELINES
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CONTACT
+            HOME
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            ABOUT
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            PRODUCTS
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            GUIDELINES
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            CONTACT
           </p>
         </div>
       </div>
@@ -384,6 +412,17 @@
           width="100%"
         />
       </div>
+
+      <div
+      class="tab-pane fade container"
+      id="pills-think"
+      role="tabpanel"
+      aria-labelledby="pills-service-tab"
+    >
+      think
+    </div>
+
+
       <div
         class="tab-pane fade"
         id="pills-works"
@@ -406,18 +445,6 @@
                 aria-controls="pills-home"
                 aria-selected="true"
                 >GLOSS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link nav-color"
-                id="pills-profile-tab"
-                data-toggle="pill"
-                href="#pills-lamination"
-                role="tab"
-                aria-controls="pills-profile"
-                aria-selected="false"
-                >Without Lamination</a
               >
             </li>
             <li class="nav-item">
@@ -447,6 +474,19 @@
             <li class="nav-item">
               <a
                 class="nav-link nav-color"
+                id="pills-profile-tab"
+                data-toggle="pill"
+                href="#pills-lamination"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                >Without Lamination</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link nav-color"
                 id="pills-contact-tab"
                 data-toggle="pill"
                 href="#pills-special"
@@ -465,7 +505,7 @@
                 role="tab"
                 aria-controls="pills-contact"
                 aria-selected="false"
-                >Maplitho Paper -80Gsm</a
+                >Letterhead</a
               >
             </li>
             <li class="nav-item">
@@ -478,18 +518,6 @@
                 aria-controls="pills-contact"
                 aria-selected="false"
                 >BROUCHER</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link nav-color"
-                id="pills-contact-tab"
-                data-toggle="pill"
-                href="#pills-maplitho2"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-                >Maplitho paper</a
               >
             </li>
           </ul>
@@ -505,17 +533,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Gloss - 3Da.jpg"
+                    src="./assets/images/Gloss - SS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Gloss SS 500</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="mt-2 card-bot">Gloss SS 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>200.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -523,7 +551,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -535,19 +563,19 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4" style="height: auto">
+                <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Gloss - 3Da.jpg"
+                    src="./assets/images/Gloss - SS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
                   <div class="content-work pt-2 pb-3">
-                    <h3 class="">Gloss SS 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                    <h3 class="card-bot">Gloss SS 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>280.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -555,13 +583,13 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
-                      Printing | Single Side Gloss Lamination | File Upload Size
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
                     <a
                       href="#"
-                      title="Gloss SS 1000"
+                      title="Gloss FB 1000"
                       class="class-butt attToCart"
                       >Add to cart</a
                     >
@@ -569,17 +597,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Gloss - 3Da.jpg"
+                    src="./assets/images/Gloss-FB.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
                   <div class="content-work pt-2 pb-3">
-                    <h3 class="">Gloss FB 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                    <h3 class="card-bot">Gloss FB 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>450.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -587,7 +615,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -611,19 +639,19 @@
                 VISITING CARDS WITHOUT LAMINATION
               </h4>
               <div class="row">
-                <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
+                <div class="col-md-6 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Gloss - 3Da.jpg"
+                    src="./assets/images/Without Lamination SS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Without lamination Gloss SS 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Without lamination Gloss SS 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>280.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -631,7 +659,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -643,19 +671,19 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4" style="height: auto">
+                <div class="col-md-6 mt-2" style="height: auto">
                   <img
-                    src="./assets/images/Gloss - 3Da.jpg"
+                    src="./assets/images/Without Lamination FB.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
                   <div class="content-work pt-2 pb-3">
-                    <h3 class="">Without lamination Gloss FB 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                    <h3 class="card-bot">Without lamination Gloss FB 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>450.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -663,7 +691,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -687,17 +715,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Matt - 3D.jpg"
+                    src="./assets/images/Matt - SS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Matt SS 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Matt SS 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>350.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -705,7 +733,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -720,17 +748,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Matt - 3D.jpg"
+                    src="./assets/images/Matt - FB.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Matt FB 1000</h3>
-                    <p style="color: orange; font-size: 24px">
-                      Rs.<span>500.00</span>
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Matt FB 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
+                      Rs.<span>420.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -738,7 +766,36 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Printing | Front Back Gloss Lamination | File Upload Size
+                      - 90mm x 53 mm
+                    </p>
+                    <a href="#" title="Matt FB 500" class="class-butt attToCart"
+                      >Add to cart</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
+                  <img
+                    src="./assets/images/Matt - FB.jpg"
+                    width="100%"
+                    height="100%"
+                    class="img-fluid"
+                  />
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Matt FB 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
+                      Rs.<span>500.00</span>
+                    </p>
+                    <label>QTY:</label>
+                    <input
+                      type="number"
+                      value="1"
+                      style="width: 50px; padding-left: 5px"
+                      class="mb-1"
+                    />
+                    <p>
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -750,50 +807,21 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
-                  <img
-                    src="./assets/images/Matt - 3D.jpg"
-                    width="100%"
-                    height="100%"
-                    class="img-fluid"
-                  />
-                  <div class="content-work">
-                    <h3 class="">Matt FB 500</h3>
-                    <p style="color: orange; font-size: 24px">
-                      Rs.<span>420.00</span>
-                    </p>
-                    <label>QUANTITY:</label>
-                    <input
-                      type="number"
-                      value="1"
-                      style="width: 50px; padding-left: 5px"
-                      class="mb-1"
-                    />
-                    <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
-                      Printing | Front Back Gloss Lamination | File Upload Size
-                      - 90mm x 53 mm
-                    </p>
-                    <a href="#" title="Matt FB 500" class="class-butt attToCart"
-                      >Add to cart</a
-                    >
-                  </div>
-                </div>
               </div>
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/UV.jpg"
+                    src="./assets/images/Matt Spot UV.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Math UV-ss 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Math UV-ss 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>600.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -801,7 +829,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -815,17 +843,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/UV.jpg"
+                    src="./assets/images/Matt Spot UV.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Math UVFB-ss 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Math UVFB-ss 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>880.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -833,7 +861,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -850,17 +878,17 @@
                   style="height: auto"
                 >
                   <img
-                    src="./assets/images/UV.jpg"
+                    src="./assets/images/Matt Spot UV.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Matt UVFB-fb</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Matt UVFB-fb</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1100.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -868,7 +896,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -892,17 +920,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Synthetic SS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Synthetic SS 500</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Synthetic SS 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>350.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -910,7 +938,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -924,17 +952,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Synthetic SS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Synthetic SS 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Synthetic SS 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>450.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -942,7 +970,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -956,17 +984,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Synthetic FB.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Synthetic FB 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Synthetic FB 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>600.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -974,7 +1002,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -987,17 +1015,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Synthetic Spot UV.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Synthetic UV-ss 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Synthetic UV-ss 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>800.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1005,7 +1033,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1019,17 +1047,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Synthetic Spot UV.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Synthetic UV_FB-ss 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Synthetic UV_FB-ss 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>950.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1037,7 +1065,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1051,17 +1079,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Synthetic Spot UV.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Synthetic UVFB-fb 1000</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Synthetic UVFB-fb 1000</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1200.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1069,7 +1097,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1098,12 +1126,12 @@
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Corporate Card SS 500</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Corporate Card SS 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>560.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1111,7 +1139,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1125,17 +1153,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Corporate Card (2).jpg"
+                    src="./assets/images/Textured Card (2).jpg"
                     width="100%"
-                    height="100%"
+                    height="100px"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Corporate Card FB 500</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Textured Card SS 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>760.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1143,7 +1171,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1162,12 +1190,12 @@
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Mettalic Card SS 500</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Mettalic Card SS 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>760.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1175,7 +1203,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1188,17 +1216,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Mettalic GS-3d.jpg"
+                    src="./assets/images/Corporate Card (2).jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Mettalic Card FB 500</h3>
-                    <p style="color: orange; font-size: 24px">
-                      Rs.<span>960.00</span>
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Corporate Card FB 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
+                      Rs.<span>560.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1206,7 +1234,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1214,6 +1242,67 @@
                       href="#"
                       title="Matt SS 1000"
                       class="class-butt attToCart"
+                      >Add to cart</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
+                  <img
+                    src="./assets/images/Textured Card (2).jpg"
+                    width="100%"
+                    height="100px"
+                    class="img-fluid"
+                  />
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Textured Card FB 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
+                      Rs.<span>760.00</span>
+                    </p>
+                    <label>QTY:</label>
+                    <input
+                      type="number"
+                      value="1"
+                      style="width: 50px; padding-left: 5px"
+                      class="mb-1"
+                    />
+                    <p>
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Printing | Single Side Gloss Lamination | File Upload Size
+                      - 90mm x 53 mm
+                    </p>
+                    <a
+                      href="#"
+                      title="Matt FB 1000"
+                      class="class-butt attToCart"
+                      >Add to cart</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
+                  <img
+                    src="./assets/images/Mettalic GS-3d.jpg"
+                    width="100%"
+                    height="100%"
+                    class="img-fluid"
+                  />
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Mettalic Card FB 500</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
+                      Rs.<span>760.00</span>
+                    </p>
+                    <label>QTY:</label>
+                    <input
+                      type="number"
+                      value="1"
+                      style="width: 50px; padding-left: 5px"
+                      class="mb-1"
+                    />
+                    <p>
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Printing | Front Back Gloss Lamination | File Upload Size
+                      - 90mm x 53 mm
+                    </p>
+                    <a href="#" title="Matt FB 500" class="class-butt attToCart"
                       >Add to cart</a
                     >
                   </div>
@@ -1232,17 +1321,17 @@
               <div class="row">
                 <div class="col-md-6 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/letterhead-3.jpg"
+                    src="./assets/images/Letter Head -LS.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Letter Head Loose Sheet</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Letter Head Loose Sheet</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1600.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1250,7 +1339,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1269,12 +1358,12 @@
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">Letter Head with 10 Pad</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">Letter Head with 10 Pad</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1850.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1282,7 +1371,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1308,17 +1397,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 size 170gsm Art - SS</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 size 170gsm Art - SS</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>2400.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1326,7 +1415,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1340,17 +1429,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 size 170gsm Art - FB</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 size 170gsm Art - FB</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>3200.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1358,7 +1447,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1372,17 +1461,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 size 100gsm Art - SS</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 size 100gsm Art - SS</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1300.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1390,7 +1479,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1403,17 +1492,17 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 size 100gsm Art - FB</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 size 100gsm Art - FB</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1900.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1421,7 +1510,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1435,17 +1524,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 size 130gsm Art - SS</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 size 130gsm Art - SS</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>2000.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1453,7 +1542,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1467,17 +1556,17 @@
                 </div>
                 <div class="col-md-6 col-lg-4 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/Synthetic - 3D.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 size 130gsm Art - SS</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 size 130gsm Art - SS</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>2650.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1485,7 +1574,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 1000 | Art Board (300 GSM) | 4C+4C Single Side
+                      Qty: : 1000 | Art Board (300 GSM) | 4C+4C Single Side
                       Printing | Front Back Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1495,28 +1584,21 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-maplitho2"
-              role="tabpanel"
-              aria-labelledby="pills-contact-tab"
-            >
               <h4 style="color: orange">Maplitho Paper(2000 Copys)</h4>
               <div class="row">
                 <div class="col-md-6 pt-2 pb-3" style="height: auto">
                   <img
-                    src="./assets/images/letterhead-3.jpg"
+                    src="./assets/images/Art 170_130_100_brochure.jpg"
                     width="100%"
                     height="100%"
                     class="img-fluid"
                   />
-                  <div class="content-work">
-                    <h3 class="">A4 80 GSM Maplitho</h3>
-                    <p style="color: orange; font-size: 24px">
+                  <div class="content-work pt-2 pb-3">
+                    <h3 class="card-bot">A4 80 GSM Maplitho</h3>
+                    <p style="color: orange; font-size: 24px" class="card-bot">
                       Rs.<span>1600.00</span>
                     </p>
-                    <label>QUANTITY:</label>
+                    <label>QTY:</label>
                     <input
                       type="number"
                       value="1"
@@ -1524,7 +1606,7 @@
                       class="mb-1"
                     />
                     <p>
-                      Qty : 500 | Art Board (300 GSM) | 4C+0 Single Side
+                      Qty: : 500 | Art Board (300 GSM) | 4C+0 Single Side
                       Printing | Single Side Gloss Lamination | File Upload Size
                       - 90mm x 53 mm
                     </p>
@@ -1548,8 +1630,9 @@
         role="tabpanel"
         aria-labelledby="pills-contact-tab"
       >
-        contacts
+        <h1>contact</h1>
       </div>
+
     </div>
 
     <script src="assets/javascript/main.js"></script>

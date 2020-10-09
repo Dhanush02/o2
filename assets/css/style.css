@@ -31,22 +31,26 @@ body::-webkit-scrollbar-thumb,
 }
 #navbar-example2{
   height:80px;
+  background: #fff;
+  
+}
+.content-work p{
+  text-align: justify;
 }
 .nav-fix {
   top: 0;
   width: 100%;
-  z-index: 999 !important;
-  display: flex !important;
-  flex-direction: column !important;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 8px 25px 0 rgba(0,0,0,.1);
 }
 .style {
   opacity: 1;
   display: inline-block;
   margin: 10px !important;
-  padding: 10px 15px !important;
+  padding: 5px 10px !important;
   font-weight: bolder;
-  color: #000;
   font-size: 1em !important;
   text-transform: uppercase;
   font-size: 1em;
@@ -54,7 +58,7 @@ body::-webkit-scrollbar-thumb,
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color:rgb(100, 209, 36) ;
+  color:orange;
   background: none;
 }
 .nav-pills .red-tab.active,
@@ -63,6 +67,13 @@ body::-webkit-scrollbar-thumb,
   color: rgb(253, 66, 66);
   background: none;
   border-bottom: 2px solid rgb(253, 66, 66);
+}
+.nav-pills .orange2-tab.active,
+.nav-pills .show > .orange2-tab,
+.nav-pills .orange2-tab:hover {
+  color:crimson;
+  background: none;
+  border-bottom: 2px solid crimson;
 }
 .nav-pills .blue-tab.active,
 .nav-pills .show > .blue-tab,
@@ -191,7 +202,7 @@ img {
   background: #ff0000a5;
 }
 .cart-heading {
-  color: orange;
+  color: rgb(5, 5, 5);
 }
 
 .icons-btn {
@@ -224,6 +235,10 @@ img {
 .content-work a,
 .content-work p span {
   font-family: "Noto Sans JP", sans-serif;
+}
+.card-bot{
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 .class-butt {
   background-color: #ff781f;
@@ -281,3 +296,4 @@ hr{
   top:-13px;
   left:20px;
 }
+
