@@ -1,5 +1,10 @@
 NProgress.start();
 NProgress.done();
+setTimeout(function(){
+  document.querySelector(".layer").classList.add('complete');
+  var loader = document.querySelector("#loader-wrapper");
+  loader.style.display = "none";
+}, 1500)
 menu = () => {
   var showNav = document.querySelector(".nav");
   showNav.classList.toggle("show");
@@ -75,6 +80,7 @@ let deleteRow = (e) => {
   iconShoppingP.innerHTML = --itemsInCart
   items = items.filter(item => item.name !== e.parentElement.parentElement.children[1].textContent)
   addRows()
+  console.log(items)
 }
 let totalAmount = () => {
   let sum = 0;
