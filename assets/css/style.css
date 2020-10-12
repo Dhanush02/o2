@@ -219,10 +219,13 @@ body::-webkit-scrollbar-thumb,
   color: orange;
   font-size: 28px;
 }
-#navbar-example2{
+.navbar{
   height:80px;
   background: #fff;
   
+}
+.orange2-tab:active .navbar{
+  background-color: black !important;
 }
 .content-work p{
   text-align: justify;
@@ -261,9 +264,9 @@ body::-webkit-scrollbar-thumb,
 .nav-pills .orange2-tab.active,
 .nav-pills .show > .orange2-tab,
 .nav-pills .orange2-tab:hover {
-  color:crimson;
+  color:rgb(184, 141, 48);
   background: none;
-  border-bottom: 2px solid crimson;
+  border-bottom: 2px solid rgb(184, 141, 48);
 }
 .nav-pills .blue-tab.active,
 .nav-pills .show > .blue-tab,
@@ -394,7 +397,16 @@ img {
 .cart-heading {
   color: rgb(5, 5, 5);
 }
-
+.bulb{
+  cursor: url('../images/bulb.png'),auto;
+}
+.gradient {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .icons-btn {
   display: inline-block;
   text-align: center;
